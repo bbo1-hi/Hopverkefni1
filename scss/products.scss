@@ -1,0 +1,40 @@
+$headerColor : green;
+
+$footerColor : blue;
+
+
+
+footer{
+    background-color:$footerColor;
+}
+
+header{
+    display:flex;
+    background-color: $headerColor;
+    padding:10px;
+}
+header>h1{
+    margin:auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+
+
+.product_container_photos>figure>img {
+    width: 50%;
+}
+
+
+@media(min-width: 800px) {
+    
+}
+
+@media(min-width: 1500px) {
+    
+}
+
