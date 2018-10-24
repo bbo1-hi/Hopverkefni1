@@ -1,6 +1,11 @@
-$headerColor : green;
+$headerColor : #afb281;
 
-$footerColor : blue;
+$footerColor : #cee8ff;
+
+$color1 : #000000;
+$color2 : #ffffff;
+$color3 : #afb281;
+$color4 : #cc9694;
 
 
 
@@ -11,7 +16,7 @@ footer{
 header{
     display:flex;
     background-color: $headerColor;
-    padding:10px;
+    padding:1em;
 }
 header>h1{
     margin:auto;
@@ -19,22 +24,62 @@ header>h1{
 
 .flex-container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    width:100%;
+    justify-content: space-around;
+    }
+
+
+.column{
+    display:flex;
+    flex-flow: column nowrap;
+
 }
-
-
-
-
+.center{
+    margin:auto;
+}
+.span{
+    width:100%;
+}
+/*Card*/
+.product_container_photos>figure{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: space-around;
+    margin-top:4em;
+}
+/* Mynd í card */
 .product_container_photos>figure>img {
-    width: 50%;
+    width: 90%;
+    margin:auto;
+}
+.product_container_photos>figure>figcaption {
+    align-content:center;
 }
 
+/*Header texti í card */
+.product_container_photos>figcaption>figure>h4 {
+   
+}
+/* Annar text í card */
+.product_container_photos>figcaption>figure>p {
+    
+}
+
+/* Verðmerking */
+.product_container_photos>figure>figcaption>.price {
+    font-size:2em;
+}
 
 @media(min-width: 800px) {
-    
+    .product_container_photos>figure>img {
+        width: 20%;
+    }
 }
 
 @media(min-width: 1500px) {
-    
+    .product_container_photos>figure>img {
+        width: 20%;
+    }
 }
 
