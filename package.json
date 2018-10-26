@@ -1,0 +1,19 @@
+{
+  "name": "vefforritunhop1",
+  "version": "1.0.0",
+  "description": "Fyrsta Hópverkefni í Vefforritun 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbo1-hi/Hopverkefni1.git"
+  },
+  "author": "Arnar, Baldvin, Þór",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbo1-hi/Hopverkefni1/issues"
+  },
+  "homepage": "https://github.com/bbo1-hi/Hopverkefni1#readme"
+}
