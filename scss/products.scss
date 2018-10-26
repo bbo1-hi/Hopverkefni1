@@ -1,45 +1,155 @@
 $headerColor : #afb281;
 
-$footerColor : #cee8ff;
+$footerColor : #cc9694;
 
 $color1 : #000000;
-$color2 : #ffffff;
-$color3 : #afb281;
+$white : #ffffff;
+
 $color4 : #cc9694;
+$color5: #cee8ff;
 
+$mainfont: open sans, helvetica;
+$mainfont2: arial,sans-serif;
 
+$headerfont1: oswald, Verdana, serif;
+
+html{
+    font-size:16px;
+    font-family:$mainfont;
+}
+
+h1,h2,h3,h4{
+    font-family:$headerfont1;
+}
+button{
+    transition: background-color 300ms ease-in;
+}
+
+a:visited{
+    color:black;
+}
+a{
+    padding:0.5em;
+    color:black;
+    text-decoration:none;
+    transition: color 300ms ease-in;
+}
+
+a:hover{
+    color:white;
+}
+
+footer>a{
+    color:white;
+}
+
+footer>a:hover{
+    color:black;
+}
+
+button:hover{
+    background-color: $color4;
+}
 
 footer{
     background-color:$footerColor;
+    padding: 1em;
 }
 
 header{
     display:flex;
     background-color: $headerColor;
     padding:1em;
+ 
+}
+nav{
+    padding:1em;
 }
 header>h1{
     margin:auto;
+    font-family:$headerfont1;
 }
 
+.margin_top{
+    margin-top:1em;
+}
+
+.align_right{
+    right: 1em;
+
+    position:absolute;
+}
+.product_cart{
+    padding:0.3em 0.5em 0.5em 1.5em;
+    top:4em;
+    background-image:url("img/cart.svg");
+    background-repeat: no-repeat;
+    background-size:1em;
+    background-position-y:0.3em;
+
+}
+
+.footnote{
+    padding:1em;
+    margin-top:-2em;
+}
+.spread_contents{
+    display:flex;
+    justify-content: space-around;
+}
 .flex-container {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     width:100%;
     justify-content: space-around;
+    padding: 1em;
     }
 
 
 .column{
     display:flex;
     flex-flow: column nowrap;
+}
 
+.row{
+    display:flex;
+    flex-flow:row;
 }
 .center{
     margin:auto;
 }
 .span{
     width:100%;
+}
+
+.product_header{
+    margin:auto;
+}
+
+.product_order_input{
+    border:1px solid black;
+    border-radius:2px;
+    padding:0.5em;
+    margin-top:1em;
+}
+.product_order_input::after{
+    content: "Fjöldi";
+    width:200px;
+    background-color:black;
+    z-index:1;
+}
+
+.product_order_button{
+    padding: 0.5em 0.5em 0.5em 2em;
+    background-image:url("img/cart.svg");
+    background-repeat: no-repeat;
+    background-size:1.5em;
+    background-position: 0.2em 0.4em;
+    border:1px solid black;
+    background-color:white;
+    border-radius:2px;
+    margin-top:1em;
+    
 }
 /*Card*/
 .product_container_photos>figure{
@@ -53,33 +163,48 @@ header>h1{
     width: 90%;
     margin:auto;
 }
+
 .product_container_photos>figure>figcaption {
     align-content:center;
+    display: flex;
+    flex-flow:column;
+    padding: 1em 1em 1em 2em;
+    flex-flow: column;
 }
 
 /*Header texti í card */
 .product_container_photos>figcaption>figure>h4 {
-   
+   margin-top: 1em 0 0 1em;
 }
 /* Annar text í card */
-.product_container_photos>figcaption>figure>p {
-    
+.product_container_photos>figure>figcaption>p {
+    margin-top: 1em 0 0 1em;
 }
 
 /* Verðmerking */
 .product_container_photos>figure>figcaption>.price {
-    font-size:2em;
+    font-size:1.5em;
+    margin-top: 1em 0 0 1em;
+  
 }
 
 @media(min-width: 800px) {
     .product_container_photos>figure>img {
-        width: 20%;
+        width: 80%;
+    }
+
+    figure{
+        width:40%;
     }
 }
 
 @media(min-width: 1500px) {
     .product_container_photos>figure>img {
-        width: 20%;
+        width: 80%;
+    }
+
+    figure{
+        width:30%;
     }
 }
 
