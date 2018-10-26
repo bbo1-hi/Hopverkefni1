@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  margin: 20px 0;
+}
+h2 {
+  font-family: 'Oswald', sans-serif;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+}
+
+
+.productinfo {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.productinfo p {
+  
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-weight: bold;
+}  
+
+.image {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+/* grid fyrir efni */
+.cartproducts {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-direction: column;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.cartproducts__row {
+  display: flex;
+  flex-direction: column;
+  
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.cartproducts__image-col {
+  width: 100%;
+  justify-content: space-around;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.cartproducts__product-col {
+  width: 100%;
+  justify-content: space-around;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.cartproducts__row:nth-child(2n) .grid__col:first-child {
+  order: 2;
+}
+
+@media (min-width: 800px) {
+  main {
+	margin: 0 auto;
+    max-width: 1200px;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+.cartproducts__row {
+    flex-direction: row;
+  }
+
+  .cartproducts__image-col {
+    margin-bottom: 40px;
+    width: 50%;
+  }
+
+  .cartproducts__row:nth-child(2n) .grid__col:first-child {
+    order: 0;
+  }
+}
+
+@media (min-width: 1500px) {
+    main {
+      padding-left: 115px;
+      padding-right: 115px;
+}
+
+  .cartproducts__row {
+    flex-direction: row;
+  }
+
+  .cartproducts__image-col {
+    margin-bottom: 40px;
+    width: 50%;
+  }
+
+  .cartproducts__row:nth-child(2n) .grid__col:first-child {
+    order: 0;
+  }
+}

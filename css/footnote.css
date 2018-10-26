@@ -1,0 +1,31 @@
+.footnote{
+  display: flex;
+  
+  margin: 0px auto;
+ 
+  max-width: 1200px;
+  overflow: hidden;
+
+  background-color: #cc9694;
+  
+  padding-top: 20px;
+
+}
+
+.footnote__col {
+      padding-left: 20%;
+      padding-right: 20%;
+}
+.container {
+  display: flex;
+  width: 100%;
+  flex-flow: row nowrap; /* Align on the same line */
+  justify-content: space-around;
+  line-height: 180%;
+}
+
+@media (min-width: 800px) {
+.footnote__col {
+      padding-left: 0%;
+      padding-right: 0%;
+}

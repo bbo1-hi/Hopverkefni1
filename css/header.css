@@ -1,0 +1,10 @@
+.banner{
+  margin: 0px auto;
+  padding-bottom: 10px;
+  max-width: 1200px;
+  overflow: hidden;
+  
+  background-color: #afb281;
+
+  text-align: center;
+}
